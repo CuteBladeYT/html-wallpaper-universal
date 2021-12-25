@@ -1,0 +1,11 @@
+/* 
+    In this file you can include styles that ALL modules will use.
+*/
+
+
+.box {
+    padding: 1vw;
+    background: rgba(60, 60, 60, 0.9);
+    border: 0.2vw rgba(255, 255, 255, 0.9) solid;
+    border-radius: 0.5vw;
+}

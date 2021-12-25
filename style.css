@@ -1,0 +1,64 @@
+body {
+    overflow: hidden;
+    user-select: none;
+}
+
+
+/*  DO NOT RE-USE THIS STYLE IN YOUR MODULE!
+    CREATE YOUR OWN INSTEAD
+*/
+#notification {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    padding: 1vw;
+    background: rgba(60, 60, 60, 0.9);
+    border: 0.2vw rgba(255, 255, 255, 0.9) solid;
+    border-radius: 0.5vw;
+    width: 20vw;
+    max-height: 10vh;
+    z-index: 99999;
+    transition: 1000ms;
+    opacity: 0;
+}
+#notification > div {
+    color: white;
+    font-family: monospace;
+    font-size: 2vh;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+#notification > progress {
+    -webkit-appearance: none;
+    appearance: none;
+
+    position: absolute;
+    width: calc(100% - 2vw);
+    height: 1vh;
+}
+#notification > ::-webkit-progress-bar {
+    background: rgba(60, 60, 60, 0.9);
+}
+#notification > ::-webkit-progress-value {
+    background: white;
+    transition: 3000ms linear;
+}
+
+.wallpaper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* This line responds for cropping the image to keep it's aspect ratio */
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+ui {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 96vh; /* You can mess with this if taskbar is overlapping your wallpaper's elements */
+    z-index: 2;
+}

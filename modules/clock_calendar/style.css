@@ -1,0 +1,32 @@
+.dateContainer {
+    position: absolute;
+    bottom: 1vw;
+    width: 28vw;
+    left: calc(100vw / 2 - (28vw / 2));
+}
+
+#clock {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 10vw;
+    height: 2vh;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2vh;
+    color: white;
+    user-select: text;
+}
+
+#date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10vw;
+    height: 2vh;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2vh;
+    color: white;
+    user-select: text;
+}
