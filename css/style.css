@@ -1,0 +1,211 @@
+@font-face {
+    font-family: heebo;
+    src: url(./fonts/heebo.ttf);
+}
+@font-face {
+    font-family: fff;
+    src: url(./fonts/fff.ttf);
+}
+
+
+
+/* ELEM CONFIG */
+
+body {
+    overflow: hidden auto;
+    user-select: none;
+    background: rgb(160, 160, 160);
+}
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    h1 {
+        position: relative;
+        color: black;
+        font-family: heebo;
+        font-size: 4vh;
+        font-weight: 600;
+        margin-bottom: 0vh;
+        margin-top: 0vh;
+    }
+    h2 {
+        position: relative;
+        color: black;
+        font-family: heebo;
+        font-size: 3vh;
+        font-weight: 600;
+        margin-bottom: 0vh;
+        margin-top: 0vh;
+    }
+    h3 {
+        position: relative;
+        color: black;
+        font-family: heebo;
+        font-size: 2.5vh;
+        font-weight: 600;
+        margin-bottom: 0vh;
+        margin-top: 0vh;
+    }
+    p {
+        position: relative;
+        color: black;
+        font-family: heebo;
+        font-size: 2vh;
+        margin-bottom: 0vh;
+        margin-top: 0vh;
+    }
+    code {
+        background: rgba(60, 60, 60, 0.9);
+        padding: 0.2vw;
+        border-radius: 0.3vw;
+        font-family: monospace;
+        font-size: inherit;
+    }
+    code > red {
+        color: rgb(255, 102, 102);
+    }
+    code > blue {
+        color: rgb(77, 169, 255);
+    }
+
+
+
+/* CLASS CONFIG */
+
+.c_left {
+    text-align: left;
+}
+.c_center {
+    text-align: center;
+}
+.c_right {
+    text-align: right;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.white {
+    color: white;
+}
+.linkblue {
+    color: rgb(0, 132, 255);
+}
+.linkblue:hover {
+    text-decoration: underline;
+}
+
+.docs_toc1 {
+    position: relative;
+    color: white;
+    font-family: heebo;
+    font-size: 2vh;
+    font-weight: 600;
+    margin-left: 1vw;
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+}
+.docs_toc2 {
+    position: relative;
+    color: white;
+    font-family: heebo;
+    font-size: 2vh;
+    font-weight: 600;
+    margin-left: 2vw;
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+}
+
+
+
+/* REST STYLES */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background: rgb(20, 20, 20);
+    border-bottom: 1vh white solid;
+    z-index: 2;
+}
+    header > a {
+        position: relative;
+        top: 3vh;
+        margin-left: 2vw;
+        color: white;
+        text-decoration: none;
+        font-family: heebo;
+        font-size: 3vh;
+    }
+    header > a:hover {
+        text-decoration: underline;
+    }
+
+    header > img {
+        position: absolute;
+        top: 0vh;
+        right: 2vw;
+        width: 10vh;
+        height: 10vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+content {
+    position: absolute;
+    top: 15vh;
+    left: 4vw;
+    width: calc(100vw - 8vw);
+    height: auto;
+    z-index: 1;
+}
+
+div.screenshots {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    background: rgb(140, 140, 140);
+    border: 0.3vw white solid;
+    border-radius: 1vw;
+    left: calc(100vw / 2 - (80vw / 2) - 4vw)
+}
+    div.screenshots > img.preview {
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+        width: 78vw;
+        height: 60vh;
+        object-position: center;
+        object-fit: contain;
+    }
+    div.screenshots > div.images {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80vw;
+        height: 10vh;
+        background: rgb(20, 20, 20);
+        border-bottom-left-radius: 1vw;
+        border-bottom-right-radius: 1vw;
+    }
+    div.screenshots > div.images > img.imgbutton {
+        position: relative;
+        margin: 1vh;
+        width: 8vh;
+        height: 8vh;
+        border-radius: 1vw;
+        opacity: 0.5;
+        transition: 200ms;
+        cursor: pointer;
+        object-fit: cover;
+        object-position: center;
+    }
+    div.screenshots > div.images > img.imgbutton:hover {
+        opacity: 1;
+        border-radius: 0.3vw;
+    }

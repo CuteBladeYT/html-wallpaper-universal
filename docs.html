@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Wallpaper Universal - Docs</title>
+
+        <link rel="icon" href="./imgs/favicon.png">
+        
+        <link rel="stylesheet" href="./css/style.css">
+
+        <script src="./js/script.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <a href="./index.html">Home</a>
+            <a href="./docs.html">Docs</a>
+
+            <img src="./imgs/favicon.png">
+        </header>
+
+        <content>
+            <h1 class="c_center">HTML Universal Wallpaper</h1>
+            <h3 class="c_center white">Highly Customizable and Functional Wallpaper</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="c_center">Docs</h1>
+            <br>
+            <br>
+            <h2 class="c_left">Table of Contents</h2>
+            <a href="#docs__installation" class="c_left docs_toc1">• Installation</a><br>
+            <a href="#docs__setting_wallpaper" class="c_left docs_toc1">• Setting Wallpaper</a><br>
+            <a href="#docs__installing_modules" class="c_left docs_toc1">• Installing Modules</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="docs__installation">
+                <h2 class="c_left">Installation</h2>
+                <p class="c_left white"><b>NOTE: Installation depends on what operating system you use.</b></p>
+                <br>
+                <p class="c_left">• Windows</p>
+                <p class="c_left white">
+                    1. Download and Install <b>WallpaperWebPage</b> application.<br>
+                    2. Run it.<br>
+                    3. On taskbar will appear it's tray icon. Right click it then Configure.<br>
+                    4. A new window with URL input will appear.<br>
+                        In place where the window asks about URL adress, copy the location of <code>wallpaper.html</code> and paste it.<br>
+                        It may look similar to this:<br>
+                        <code>C:/Users/you/Desktop/Wallpaper Universal/wallpaper.html</code>, but remember to always include <code>wallpaper.html</code> in the end!<br>
+                    5. Press OK.<br>
+                    6. Done!
+                </p>
+                <br>
+                <p class="c_left">• Linux</p>
+                <p class="c_left white"><a class="linkblue" href="https://www.linux-apps.com/p/1324580" target="_blank">This plugin</a> is the only way I found and tested.</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="docs__setting_wallpaper">
+                <h2 class="c_left">Setting Wallpaper</h2>
+                <p class="c_left white">
+                    The process is very simple!<br>
+                    1. If you want to set wallpaper as image, make sure it is in <code>.png</code> format.<br>
+                        If it's a gif, it should be a <code>.gif</code>. For video and <code>.mp4</code> then.<br>
+                    2. Rename it to <code>bg</code> no matter what is after the dot.<br>
+                    3. Move it to <code>wallpapers</code> folder where <b>HTML Wallpaper</b> is located.<br>
+                    4. Refresh wallpaper.<br>
+                    5. Done!
+                </p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="docs__installing_modules">
+                <h2 class="c_left">Installing Modules</h2>
+                <p class="c_left white">
+                    1. Download module from <a class="linkblue" href="https://github.com/CuteBladeYT/html-wallpaper-universal/discussions/1" target="_blank">GitHub</a>.<br>
+                    2. Unpack it.
+                    3. Copy the folder to <code>modules</code> folder where <b>HTML Wallpaper</b> is located.<br>
+                    4. Open <code>settings.js</code> in parent folder with any code / text editor.<br>
+                    5. Slide down and find <code>WALLPAPER PRELOAD</code> section.<br>
+                    6. Inside the <code><red>document</red>.<blue>addEventListener</blue>() {</code> function place <code><blue>loadModule</blue>(path)</code><br>
+                        Replacing <code>path</code> with the name of folder from 3.<br>
+                    7. Refresh wallpaper.<br>
+                    8. Done!
+                </p>
+            </div>
+            <br>
+        </content>
+    </body>
+</html>
